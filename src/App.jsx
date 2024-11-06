@@ -6,7 +6,7 @@ import Footer from './features/components/Footer.jsx';
 import { GoogleOAuthProvider } from '@react-oauth/google';
 import './App.css';
 import useAuth from './features/hooks/useAuth.jsx';
-import AppRoutes from "@/routes/index.jsx";
+import AppRoutes from './routes/index.jsx';
 import useTokenFromUrl from './features/hooks/useTokenFromUrl.jsx';
 import useRefreshTokenInterval from './features/hooks/useRefreshTokenInterval.jsx';
 import theme from "./features/themes/theme.jsx";
