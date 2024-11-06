@@ -8,13 +8,10 @@ export default defineConfig({
       framework: 'react',
       bundler: 'vite',
       viteConfig: {
-        // Add your Vite configuration here if needed
       },
     },
     specPattern: ['src/**/*.cy.{js,jsx}'],
     setupNodeEvents(on, config) {
-      // component testing node events setup code
-      // https://docs.cypress.io/guides/tooling/code-coverage
       codeCoverageTask(on, config);
 
       on('file:preprocessor', vitePreprocessor());
@@ -26,8 +23,8 @@ export default defineConfig({
   },
 
   e2e: {
+    baseUrl: 'http://localhost:5173',
     setupNodeEvents(on, config) {
-      // implement node event listeners here
     },
   },
 });
