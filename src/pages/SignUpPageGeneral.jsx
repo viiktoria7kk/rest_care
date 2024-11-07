@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import axios from 'axios';
+const b = 'ff';
 import {
     TextField,
     Button,
@@ -34,8 +35,6 @@ const StyledContainer = styled(Container)({
     padding: '16px',
     backgroundColor: '#121212',
 });
-
-const a;
 
 const StyledPaper = styled(Paper)({
     padding: '32px',
@@ -101,7 +100,7 @@ const SignUp = () => {
                 } else if (message.includes('Sign-in link')) {
                     setDialog({
                         open: true,
-                        message: 'Схоже, у вас вже є обліковий запис. Ми надіслали вам посилання для входу на електронну адресу.',
+                        message: 'Схоже, у вас вже є обліковий запис. Ми надіслали вам посилання для входу на електронну адресу. Тест',
                     });
                 } else {
                     setDialog({open: true, message});
@@ -118,6 +117,8 @@ const SignUp = () => {
     const handleGoogleSignUp = () => {
         window.location.href = `${API_URL}/auth/google/login`;
     };
+
+
 
     const handleCloseDialog = () => {
         setDialog({open: false, message: ''});
