@@ -35,6 +35,8 @@ const StyledContainer = styled(Container)({
     backgroundColor: '#121212',
 });
 
+const a;
+
 const StyledPaper = styled(Paper)({
     padding: '32px',
     maxWidth: 400,
