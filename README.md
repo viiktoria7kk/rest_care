@@ -41,6 +41,12 @@ To preview the production build, run:
 pnpm serve
 ```
 
+
+To run test:
+```sh
+pnpm run test:component
+```
+
 ## Project Structure
 
 The project is structured as follows:
